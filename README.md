@@ -17,7 +17,7 @@
 
 ## 1. Desktop (over 1024px)
 
-<video src="images/DeskTop.mov" width="600px" autoplay loop ></video>
+<img src="images/DeskTop.gif" width="600px" />
 
 ## 2. Tablet (max-width : 1024px)
 
