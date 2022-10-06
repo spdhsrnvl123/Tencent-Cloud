@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* cursor: none; */
 }
 
 body {
@@ -10,7 +9,6 @@ body {
   height: 100vh;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url(images/background2.jpg);
-  /* background: url(images/background2.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,16 +18,16 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 18px 5%;
+  padding: 3px 5%;
   z-index: 9999;
-  margin: 0 auto;
   width: 100%;
-  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e272e;
 }
 
 .wrap .logo{
-  float: left;
-  height: 80px;
+  /* height: 80px; */
 }
 .wrap .logo a {
   color: white;
@@ -103,7 +101,14 @@ main {
   margin-top: 130px;
 }
 
-/* ----------------------------------------------- */
+.hambuger{
+  position: absolute;
+  top:16px;
+  right: 55px;
+  color: white;
+  font-size: 26px;
+  display: none;
+}
 
 .content {
   padding-top: 3px;
@@ -162,16 +167,12 @@ main {
   color: white;
 }
 
-/* ----------------------------------------------------- */
-
 .news_title h1 {
   color: white;
   margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
 }
-
-/* ----------------------------------------------------- */
 
 .content_2 {
   color: white;
@@ -253,10 +254,7 @@ main {
   opacity: 1;
 }
 
-/* ----------------------------------------------------- */
-
 .content_pre {
-  /* ----------------------------------------------------- */
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(images/box.jpg);
   /* background-size: contain; */
@@ -331,14 +329,24 @@ main {
   border-bottom-right-radius: 50px;
 }
 
-/* ----------------------------------------------------- */
-
 .content_5 {
   height: 400px;
 }
 
 /* 테블릿 */
 @media (max-width : 1024px){
+  .header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+  }
+  nav{
+    margin-top: 3px;
+  }
+  main {
+    margin-top: 160px;
+  }
   .logo{
     display:flex;
     justify-content: center;
@@ -347,14 +355,12 @@ main {
     width: 100%;
     font-size: 20px;
   }
+
   .content {
     padding-top: 3px;
-
     overflow: hidden;
   }
-  nav{
-    display: none;
-  }
+
   .content_2 {
     display: flex;
     flex-direction: column;
@@ -421,6 +427,12 @@ main {
     #box_title{
       font-size: 24px;
     }
+    main{
+      margin-top: 75px;
+    }
+    .header{
+      height: 60px;
+    }
     .logo img{
       width:50px;
     }
@@ -476,5 +488,30 @@ main {
       height: 215vw;
       margin: 50px;
       font-size: 16px;
+    }
+    .hambuger{
+      display: block;
+    }
+    .gnb{
+      display: flex;
+      margin-top: 80px;
+      flex-direction: column;
+    }
+    .nav{
+      display: none;
+    }
+    .gnb li{
+      padding-top: 20px;
+    }
+    .nav ul li:hover ul {
+      display: none;
+    }
+    .nav.active{
+      display: block;
+      position: absolute;
+      top:25%;
+    }
+    .header.active{
+      height: 30%;
     }
 }
