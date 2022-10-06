@@ -11,11 +11,11 @@
 
 ## 1. Desktop (over 1024px)
 
-<img src="images/Desktop.png" width="1025px" />
+<video src="images/DeskTop.mov" width="600px" autoplay ></video>
 
 ## 2. Tablet (max-width : 1024px)
 
-<img src="images/Tablet.png" width="769px" />
+<img src="images/Tablet.png" width="600px" />
 
 ## 2. mobile (max-width : 768px)
 
