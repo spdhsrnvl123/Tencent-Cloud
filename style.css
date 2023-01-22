@@ -124,7 +124,6 @@ main {
   opacity: 0.8;
   margin-left: 50px;
   margin-right: 50px;
-  /* background-color: powderblue; */
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
@@ -257,12 +256,10 @@ main {
 .content_pre {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(images/box.jpg);
-  /* background-size: contain; */
   border-radius: 20px;
   margin: 50px;
   height: 500px;
   background-repeat: no-repeat;
-  /* height: 400px; */
 }
 
 #box_title {
