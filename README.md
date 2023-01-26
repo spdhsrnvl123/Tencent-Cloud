@@ -1,4 +1,4 @@
-# Responsive-Tencent Cloud
+# Tencent Cloud
 
 # 🚀 배포
 📎 https://spdhsrnvl123.github.io/Tencent-Cloud/
